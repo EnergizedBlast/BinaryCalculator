@@ -1,4 +1,4 @@
-# BinaryCalculator
+# Binary Calculator
 
 Collaborators: Bryson Ward, Chris Wilson, Corbin Creedon, Nick Bartling
 
