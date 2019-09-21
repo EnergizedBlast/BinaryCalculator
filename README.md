@@ -6,7 +6,7 @@ The requirements for this project are below:
 
     The system shall look like a regular calculator.[MediumPriority]
     The system shall only have two buttons for numbers: 0 and 1.[HighPriority]
-    The system can do operations with two numbers like below.[HighPriority]
+    The system can do operations with two numbers like below.[HighPriority] - Corbin Creedon
         The user shall enter a binary number, then press an operation button, then enter another number, finally pressing 'equal' button shall display the result of the operation.
         These operations shall be addition, subtraction, division, and multiplication.
     The system shall work on only integer values.[MediumPriority]
