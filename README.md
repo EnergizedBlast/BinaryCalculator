@@ -2,7 +2,9 @@
 
 Collaborators: Bryson Ward, Chris Wilson, Corbin Creedon, Nick Bartling
 
+
 Corbin Creedon = R3
+
 Chris Wilson = R1, R2
 
 The requirements for this project are below:
