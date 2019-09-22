@@ -2,18 +2,21 @@
 
 Collaborators: Bryson Ward, Chris Wilson, Corbin Creedon, Nick Bartling
 
+Corbin Creedon = R3
+Chris Wilson = R1, R2
+
 The requirements for this project are below:
 
-    The system shall look like a regular calculator.[MediumPriority]
-    The system shall only have two buttons for numbers: 0 and 1.[HighPriority]
-    The system can do operations with two numbers like below.[HighPriority] - Corbin Creedon
-        The user shall enter a binary number, then press an operation button, then enter another number, finally pressing 'equal' button shall display the result of the operation.
-        These operations shall be addition, subtraction, division, and multiplication.
-    The system shall work on only integer values.[MediumPriority]
-    The system can do operations with one number like below.[LowPriority]
-        The user shall enter a binary number, then pressing an operation button shall display the result of the operation.
-        These operations shall be square and square-root.
-    The system shall have a visible display for the entered numbers and the result of the operation.[HighPriority]
+    R1. The system shall look like a regular calculator.[MediumPriority]
+    R2. The system shall only have two buttons for numbers: 0 and 1.[HighPriority]
+    R3. The system can do operations with two numbers like below.[HighPriority]
+        R3.1 The user shall enter a binary number, then press an operation button, then enter another number, finally pressing 'equal' button shall display the result of the operation.
+        R3.2 These operations shall be addition, subtraction, division, and multiplication.
+    R4. The system shall work on only integer values.[MediumPriority]
+    R5. The system can do operations with one number like below.[LowPriority]
+        R5.1 The user shall enter a binary number, then pressing an operation button shall display the result of the operation.
+        R5.2 These operations shall be square and square-root.
+    R6. The system shall have a visible display for the entered numbers and the result of the operation.[HighPriority]
 
 The non-functional requirements for this project are below:
 
