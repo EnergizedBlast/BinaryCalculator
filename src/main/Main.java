@@ -18,7 +18,7 @@ public class Main extends Application {
     public void start(Stage primaryStage) {
         Parent root;
         try {
-            root = FXMLLoader.load(getClass().getResource("calculator.fxml"));
+            root = FXMLLoader.load(getClass().getResource("view/calculator.fxml"));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
