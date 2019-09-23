@@ -7,6 +7,8 @@ Corbin Creedon = R3
 
 Chris Wilson = R1, R2
 
+Bryson Ward = R4
+
 The requirements for this project are below:
 
     R1. The system shall look like a regular calculator.[MediumPriority]
