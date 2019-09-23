@@ -12,9 +12,21 @@ public class BinaryCalculatorTest {
     }
 
     @Test
-    public void testBinaryAddTemp(){
+    public void testBinarySubtract(){
         BinaryCalculator calculator = new BinaryCalculator();
-        String result = calculator.add("111", "111");
-        assertEquals(result,"1110");
+        String result = calculator.subtract("10000", "1000");
+        assertEquals(result,"1000");
+    }
+    @Test
+    public void testBinaryMultiply(){
+        BinaryCalculator calculator = new BinaryCalculator();
+        String result = calculator.multiply("100", "100");
+        assertEquals(result,"10000");
+    }
+    @Test
+    public void testBinaryDivide(){
+        BinaryCalculator calculator = new BinaryCalculator();
+        String result = calculator.divide("11110", "00011");
+        assertEquals(result,"1010");
     }
 }

@@ -3,13 +3,9 @@
     <properties maven-id="org.openjfx:javafx-fxml:LATEST" />
     <CLASSES>
       <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-fxml/13-ea+14b/javafx-fxml-13-ea+14b.jar!/" />
-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-fxml/13-ea+14b/javafx-fxml-13-ea+14b-win.jar!/" />
       <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/13-ea+14b/javafx-controls-13-ea+14b.jar!/" />
-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/13-ea+14b/javafx-controls-13-ea+14b-win.jar!/" />
       <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/13-ea+14b/javafx-graphics-13-ea+14b.jar!/" />
-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/13-ea+14b/javafx-graphics-13-ea+14b-win.jar!/" />
       <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-base/13-ea+14b/javafx-base-13-ea+14b.jar!/" />
-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-base/13-ea+14b/javafx-base-13-ea+14b-win.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
