@@ -1,4 +1,4 @@
-import main.BinaryCalculator;
+import main.model.BinaryCalculator;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
