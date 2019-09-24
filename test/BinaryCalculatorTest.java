@@ -38,4 +38,10 @@ class BinaryCalculatorTest {
         String result = calculator.squared("111");
         assertEquals(result, "0110001");
     }
+    @Test
+    void testBinarySquareRoot() {
+        BinaryCalculator calculator = new BinaryCalculator();
+        String result = calculator.squareRoot( "1100100");
+        assertEquals(result, "1010");
+    }
 }
