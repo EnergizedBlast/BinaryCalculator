@@ -112,7 +112,7 @@ public class Controller {
         equals();
     }
     @FXML
-    public void squareRoot(){
+    public void sqrt(){
         operate(6,"√");
         equals();
     }
@@ -163,7 +163,7 @@ public class Controller {
                 break;
             case 6:
                 if(!firstValue.equals("")){
-                    actionView.setText(calculator.squareRoot(firstValue));
+                    actionView.setText(calculator.sqrt(firstValue));
                     reiterate();
                 }
                 break;

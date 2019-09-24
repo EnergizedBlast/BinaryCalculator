@@ -33,7 +33,7 @@ public class BinaryCalculator {
         int answer = decimal1*decimal1;
         return Integer.toBinaryString(answer);
     }
-    public String squareRoot(String s1){
+    public String sqrt(String s1){
         int decimal1 = Integer.parseInt(s1,2);
         int answer = (int) Math.sqrt(decimal1);
         return Integer.toBinaryString(answer);

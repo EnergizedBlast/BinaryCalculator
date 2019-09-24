@@ -39,9 +39,9 @@ class BinaryCalculatorTest {
         assertEquals(result, "0110001");
     }
     @Test
-    void testBinarySquareRoot() {
+    void testBinarySqrt() {
         BinaryCalculator calculator = new BinaryCalculator();
-        String result = calculator.squareRoot( "1100100");
+        String result = calculator.sqrt( "1100100");
         assertEquals(result, "1010");
     }
 }
