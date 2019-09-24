@@ -142,6 +142,14 @@ public class Main extends Application {
         clear();
         operation = 5;
     }
+    @FXML
+    public void sqrt() {
+        updateUI();
+        firstValue = active;
+        historyView.setText(active + "√");
+        clear();
+        operation = 6;
+    }
 
     @FXML
     public void equals() {
@@ -166,7 +174,9 @@ public class Main extends Application {
             case 5:
                 actionView.setText(calculator.squared("111"));
                 break;
-
+            case 6:
+                actionView.setText(calculator.sqrt(firstValue));
+                break;
             default:
                 break;
         }
@@ -182,6 +192,7 @@ public class Main extends Application {
         multiply.setDisable(true);
         divide.setDisable(true);
         squared.setDisable(true);
+        sqrt.setDisable(true);
         equals.setDisable(false);
     }
 
@@ -192,6 +203,7 @@ public class Main extends Application {
         multiply.setDisable(false);
         divide.setDisable(false);
         squared.setDisable(false);
+        sqrt.setDisable(false);
         equals.setDisable(true);
     }
 }
