@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="319.0" prefWidth="238.0" scaleShape="false" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.Main">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="319.0" prefWidth="238.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.Main">
    <children>
       <Pane layoutX="14.0" layoutY="14.0" prefHeight="155.0" prefWidth="210.0" style="-fx-background-color: gray;">
          <children>
@@ -29,7 +29,7 @@
       <Button fx:id="divide" layoutX="164.0" layoutY="214.0" mnemonicParsing="false" onAction="#division" prefHeight="29.0" prefWidth="28.0" text="÷" />
       <Button fx:id="multiply" layoutX="195.0" layoutY="214.0" mnemonicParsing="false" onAction="#multiplication" prefHeight="29.0" prefWidth="28.0" text="×" />
       <Button fx:id="sqrt" layoutX="164.0" layoutY="245.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="28.0" text="√" />
-      <Button fx:id="squared" layoutX="195.0" layoutY="245.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="28.0" text="𝑥²" />
+      <Button fx:id="square" layoutX="195.0" layoutY="245.0" mnemonicParsing="false" onAction="#square" prefHeight="29.0" prefWidth="28.0" text="𝑥²" />
       <Button fx:id="clear" layoutX="164.0" layoutY="277.0" mnemonicParsing="false" onAction="#clear" prefHeight="29.0" prefWidth="28.0" text="C" textOverrun="CLIP" />
       <Button fx:id="equals" disable="true" layoutX="195.0" layoutY="277.0" mnemonicParsing="false" onAction="#equals" prefHeight="29.0" prefWidth="28.0" text="=" />
    </children>

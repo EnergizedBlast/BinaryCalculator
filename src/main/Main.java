@@ -43,7 +43,7 @@ public class Main extends Application {
     private Button sqrt;
 
     @FXML
-    private Button squared;
+    private Button square;
 
     @FXML
     private Button clear;
@@ -95,7 +95,6 @@ public class Main extends Application {
     public void clear(){
         active = "";
         actionView.setText(active);
-
     }
 
 
@@ -138,6 +137,17 @@ public class Main extends Application {
     }
 
     @FXML
+    public void square(){
+        updateUI();
+        firstValue = active;
+        historyView.setText(active);
+        clear();
+        operation=5;
+        equals();
+        historyView.setText(active);
+    }
+
+    @FXML
     public void equals(){
         secondValue = active;
         String original = historyView.getText();
@@ -152,6 +162,8 @@ public class Main extends Application {
             case 3: actionView.setText(calculator.subtract(firstValue,secondValue));
                 break;
             case 4: actionView.setText(calculator.multiply(firstValue,secondValue));
+                break;
+            case 5: actionView.setText(calculator.square(firstValue));
                 break;
             default: break;
         }
