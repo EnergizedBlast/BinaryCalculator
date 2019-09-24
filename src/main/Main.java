@@ -196,6 +196,7 @@ public class Main extends Application {
         multiply.setDisable(!multiply.isDisabled());
         divide.setDisable(!divide.isDisabled());
         square.setDisable(!square.isDisabled());
+        sqrt.setDisable(!sqrt.isDisabled());
         equals.setDisable(!equals.isDisabled());
     }
     @FXML
@@ -205,6 +206,7 @@ public class Main extends Application {
         multiply.setDisable(false);
         divide.setDisable(false);
         square.setDisable(false);
+        sqrt.setDisable(false);
         equals.setDisable(true);
     }
 }
