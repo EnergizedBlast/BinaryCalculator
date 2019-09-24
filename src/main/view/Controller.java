@@ -113,7 +113,7 @@ public class Controller {
     }
     @FXML
     public void sqrt(){
-        operate(6,"√");
+        operate(6,"^ 1/2");
         equals();
     }
 
