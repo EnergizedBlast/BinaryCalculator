@@ -14,6 +14,13 @@ import java.io.IOException;
 
 public class Main extends Application {
 
+
+    @FXML
+    public Button num0;
+
+    @FXML
+    public Button num1;
+
     @FXML
     private Label actionView;
 
@@ -134,6 +141,12 @@ public class Main extends Application {
     }
 
     @FXML
+    private void reiterate(){
+        redoUI();
+        active=actionView.getText();
+    }
+
+    @FXML
     public void equals(){
         secondValue = active;
         String original = historyView.getText();
@@ -141,20 +154,38 @@ public class Main extends Application {
         historyView.setText(original + active);
         BinaryCalculator calculator = new BinaryCalculator();
         switch (operation){
-            case 1: actionView.setText(calculator.divide(firstValue,secondValue));
+            case 1:
+                if(!secondValue.equals("")){
+                    actionView.setText(calculator.divide(firstValue,secondValue));
+                    reiterate();
+                }
                 break;
-            case 2: actionView.setText(calculator.add(firstValue,secondValue));
+            case 2:
+                if(!secondValue.equals("")){
+                    actionView.setText(calculator.add(firstValue,secondValue));
+                    reiterate();
+                }
                 break;
-            case 3: actionView.setText(calculator.subtract(firstValue,secondValue));
+            case 3:
+                if(!secondValue.equals("")){
+                    actionView.setText(calculator.subtract(firstValue,secondValue));
+                    reiterate();
+                }
                 break;
-            case 4: actionView.setText(calculator.multiply(firstValue,secondValue));
+            case 4:
+                if(!secondValue.equals("")){
+                    actionView.setText(calculator.multiply(firstValue,secondValue));
+                    reiterate();
+                }
                 break;
-            case 5: actionView.setText(calculator.square(firstValue));
+            case 5:
+                if(!firstValue.equals("")){
+                    actionView.setText(calculator.square(firstValue));
+                    reiterate();
+                }
                 break;
             default: break;
         }
-        redoUI();
-        active=actionView.getText();
     }
 
 
