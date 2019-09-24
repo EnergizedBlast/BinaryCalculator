@@ -70,6 +70,8 @@ public class Main extends Application {
         }
         Scene scene = new Scene(root);
         primaryStage.setScene(scene);
+        primaryStage.setTitle("Binary Calculator");
+        primaryStage.setResizable(false);
         primaryStage.show();
     }
 
