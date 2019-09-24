@@ -1,8 +1,8 @@
 # Binary Calculator
 ![Capture](Capture.PNG)
 
-Manual: 
-    This is a basic binary calculator. It allows you to do simple calculations with binary numbers.
+**Manual**: 
+    This is a basic binary calculator. It allows you to do simple calculations with binary numbers. Simply input the first number, apply the math operation you would like to apply, and if necessary input the second number. The final step is to hit the equals sign in order to obtain the final answer.
     
 
 Collaborators: Bryson Ward, Chris Wilson, Corbin Creedon, Nick Bartling
