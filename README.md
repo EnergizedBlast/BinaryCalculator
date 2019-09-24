@@ -3,11 +3,13 @@
 Collaborators: Bryson Ward, Chris Wilson, Corbin Creedon, Nick Bartling
 
 
-Corbin Creedon = R3
+Corbin Creedon = R3, R4, R6
 
-Chris Wilson = R1, R2
+Chris Wilson = R1, R2, R6
 
-Bryson Ward = R4
+Bryson Ward = R5
+
+Nick Bartling = R5
 
 The requirements for this project are below:
 

@@ -2,8 +2,6 @@ package main.model;
 
 public class BinaryCalculator {
 
-    private String s1;
-
     public String add(String s1, String s2){
         int decimal1 = Integer.parseInt(s1,2);
         int decimal2 = Integer.parseInt(s2,2);
