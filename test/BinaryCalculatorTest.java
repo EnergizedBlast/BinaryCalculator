@@ -3,14 +3,14 @@ import org.junit.jupiter.api.Test;
 
 class BinaryCalculatorTest {
 
+    private void assertEquals(String result, String s) {
+    }
+
     @Test
     void testBinaryAdd(){
         BinaryCalculator calculator = new BinaryCalculator();
         String result = calculator.add("1010", "100");
         assertEquals(result,"1110");
-    }
-
-    private void assertEquals(String result, String s) {
     }
 
     @Test
