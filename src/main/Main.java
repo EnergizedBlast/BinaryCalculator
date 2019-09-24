@@ -1,7 +1,6 @@
 package main;
 
 import javafx.application.Application;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -22,12 +21,6 @@ public class Main extends Application {
     private Label historyView;
 
     @FXML
-    private Button num0;
-
-    @FXML
-    private Button num1;
-
-    @FXML
     private Button plus;
 
     @FXML
@@ -46,18 +39,15 @@ public class Main extends Application {
     private Button square;
 
     @FXML
-    private Button clear;
-
-    @FXML
     private Button equals;
 
     public static void main(String[] args) {
         launch(args);
     }
-    public String active = "";
-    public int operation = 0;
-    public String firstValue = "";
-    public String secondValue = "";
+    private String active = "";
+    private int operation = 0;
+    private String firstValue = "";
+    private String secondValue = "";
 
 
     @Override
@@ -77,74 +67,70 @@ public class Main extends Application {
 
     @FXML
     public void giveOne(){
-        if (active.length() < 5){
-            active += "1";
-            actionView.setText(active);
-        }
+        giveNum("1");
     }
 
     @FXML
     public void giveZero(){
+        giveNum("0");
+    }
+
+    @FXML
+    private void giveNum(String num){
         if (active.length() < 5){
-            active += "0";
+            active += num;
             actionView.setText(active);
         }
     }
 
     @FXML
-    public void clear(){
+    public void clearActionView(){
         active = "";
         actionView.setText(active);
     }
 
+    @FXML
+    public void clearAll(){
+        clearActionView();
+        firstValue = "";
+        secondValue = "";
+        historyView.setText("");
+        redoUI();
+    }
 
+    @FXML
+    private void operate(int opValue, String symbol){
+        updateUI();
+        firstValue = active;
+        historyView.setText(active + " " + symbol + " ");
+        operation=opValue;
+        clearActionView();
+    }
 
     @FXML
     public void division(){
-        updateUI();
-        firstValue = active;
-        historyView.setText(active + "/");
-        clear();
-        operation=1;
+        operate(1,"/");
     }
 
     @FXML
     public void addition(){
-        updateUI();
-        firstValue = active;
-        historyView.setText(active + "+");
-        clear();
-        operation=2;
+        operate(2,"+");
     }
 
     @FXML
     public void subtraction(){
-        firstValue = active;
-        historyView.setText(active + "-");
-        updateUI();
-        clear();
-        operation=3;
+        operate(3,"-");
     }
 
     @FXML
     public void multiplication(){
-        updateUI();
-        firstValue = active;
-        historyView.setText(active + "*");
-        clear();
-        operation=4;
-
+        operate(4,"*");
     }
 
     @FXML
     public void square(){
-        updateUI();
-        firstValue = active;
-        historyView.setText(active);
-        clear();
-        operation=5;
+        operate(5,"^ 2");
         equals();
-        historyView.setText(active);
     }
 
     @FXML
@@ -173,19 +159,21 @@ public class Main extends Application {
 
 
     @FXML
-    public void updateUI(){
-        plus.setDisable(true);
-        minus.setDisable(true);
-        multiply.setDisable(true);
-        divide.setDisable(true);
-        equals.setDisable(false);
+    private void updateUI(){
+        plus.setDisable(!plus.isDisabled());
+        minus.setDisable(!minus.isDisabled());
+        multiply.setDisable(!multiply.isDisabled());
+        divide.setDisable(!divide.isDisabled());
+        square.setDisable(!square.isDisabled());
+        equals.setDisable(!equals.isDisabled());
     }
     @FXML
-    public void redoUI(){
+    private void redoUI(){
         plus.setDisable(false);
         minus.setDisable(false);
         multiply.setDisable(false);
         divide.setDisable(false);
+        square.setDisable(false);
         equals.setDisable(true);
     }
 }
