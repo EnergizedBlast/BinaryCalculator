@@ -1,7 +1,6 @@
 package main;
 
 import javafx.application.Application;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -43,7 +42,7 @@ public class Main extends Application {
     private Button sqrt;
 
     @FXML
-    private Button square;
+    private Button squared;
 
     @FXML
     private Button clear;
@@ -54,10 +53,11 @@ public class Main extends Application {
     public static void main(String[] args) {
         launch(args);
     }
-    public String active = "";
-    public int operation = 0;
-    public String firstValue = "";
-    public String secondValue = "";
+
+    private String active = "";
+    private int operation = 0;
+    private String firstValue = "";
+    private String secondValue = "";
 
 
     @Override
@@ -70,122 +70,128 @@ public class Main extends Application {
         }
         Scene scene = new Scene(root);
         primaryStage.setScene(scene);
-        primaryStage.setTitle("Binary Calculator");
-        primaryStage.setResizable(false);
         primaryStage.show();
     }
 
     @FXML
-    public void giveOne(){
-        if (active.length() < 5){
+    public void giveOne() {
+        if (active.length() < 5) {
             active += "1";
             actionView.setText(active);
         }
     }
 
     @FXML
-    public void giveZero(){
-        if (active.length() < 5){
+    public void giveZero() {
+        if (active.length() < 5) {
             active += "0";
             actionView.setText(active);
         }
     }
 
     @FXML
-    public void clear(){
+    public void clear() {
         active = "";
         actionView.setText(active);
+
     }
 
 
-
     @FXML
-    public void division(){
+    public void division() {
         updateUI();
         firstValue = active;
         historyView.setText(active + "/");
         clear();
-        operation=1;
+        operation = 1;
     }
 
     @FXML
-    public void addition(){
+    public void addition() {
         updateUI();
         firstValue = active;
         historyView.setText(active + "+");
         clear();
-        operation=2;
+        operation = 2;
     }
 
     @FXML
-    public void subtraction(){
+    public void subtraction() {
         firstValue = active;
         historyView.setText(active + "-");
         updateUI();
         clear();
-        operation=3;
+        operation = 3;
     }
 
     @FXML
-    public void multiplication(){
+    public void multiplication() {
         updateUI();
         firstValue = active;
         historyView.setText(active + "*");
         clear();
-        operation=4;
+        operation = 4;
 
     }
 
     @FXML
-    public void square(){
+    public void squared() {
         updateUI();
         firstValue = active;
-        historyView.setText(active);
+        historyView.setText(active + "*");
         clear();
-        operation=5;
-        equals();
-        historyView.setText(active);
+        operation = 5;
     }
 
     @FXML
-    public void equals(){
+    public void equals() {
         secondValue = active;
         String original = historyView.getText();
 
         historyView.setText(original + active);
         BinaryCalculator calculator = new BinaryCalculator();
-        switch (operation){
-            case 1: actionView.setText(calculator.divide(firstValue,secondValue));
+        switch (operation) {
+            case 1:
+                actionView.setText(calculator.divide(firstValue, secondValue));
                 break;
-            case 2: actionView.setText(calculator.add(firstValue,secondValue));
+            case 2:
+                actionView.setText(calculator.add(firstValue, secondValue));
                 break;
-            case 3: actionView.setText(calculator.subtract(firstValue,secondValue));
+            case 3:
+                actionView.setText(calculator.subtract(firstValue, secondValue));
                 break;
-            case 4: actionView.setText(calculator.multiply(firstValue,secondValue));
+            case 4:
+                actionView.setText(calculator.multiply(firstValue, secondValue));
                 break;
-            case 5: actionView.setText(calculator.square(firstValue));
+            case 5:
+                actionView.setText(calculator.squared("111"));
                 break;
-            default: break;
+
+            default:
+                break;
         }
         redoUI();
-        active=actionView.getText();
+        active = actionView.getText();
     }
 
 
     @FXML
-    public void updateUI(){
+    private void updateUI() {
         plus.setDisable(true);
         minus.setDisable(true);
         multiply.setDisable(true);
         divide.setDisable(true);
+        squared.setDisable(true);
         equals.setDisable(false);
     }
+
     @FXML
-    public void redoUI(){
+    public void redoUI() {
         plus.setDisable(false);
         minus.setDisable(false);
         multiply.setDisable(false);
         divide.setDisable(false);
+        squared.setDisable(false);
         equals.setDisable(true);
     }
 }

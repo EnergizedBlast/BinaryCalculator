@@ -33,9 +33,9 @@ class BinaryCalculatorTest {
     }
 
     @Test
-    void testBinarySquare() {
+    void testBinarySquared() {
         BinaryCalculator calculator = new BinaryCalculator();
-        String result = calculator.square( "111");
+        String result = calculator.squared("111");
         assertEquals(result, "0110001");
     }
 }

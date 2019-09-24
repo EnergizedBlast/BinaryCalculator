@@ -30,7 +30,7 @@ public class BinaryCalculator {
         int answer = decimal1/decimal2;
         return Integer.toBinaryString(answer);
     }
-    public String square(String s1){
+    public String squared(String s1){
         int decimal1 = Integer.parseInt(s1,2);
         int answer = decimal1*decimal1;
         return Integer.toBinaryString(answer);
