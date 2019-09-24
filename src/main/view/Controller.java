@@ -152,7 +152,7 @@ public class Controller {
                 break;
             case 5:
                 if(!firstValue.equals("")){
-                    actionView.setText(calculator.square(firstValue));
+                    actionView.setText(calculator.squared(firstValue));
                     reiterate();
                 }
                 break;
