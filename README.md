@@ -1,8 +1,9 @@
 # Binary Calculator
-![Capture](Capture.png)
+![Capture](Capture.PNG)
 
 Manual: 
-    This is a basic binary calculator.
+    This is a basic binary calculator. It allows you to do simple calculations with binary numbers.
+    
 
 Collaborators: Bryson Ward, Chris Wilson, Corbin Creedon, Nick Bartling
 
