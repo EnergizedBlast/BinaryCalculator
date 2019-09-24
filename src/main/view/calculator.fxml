@@ -10,27 +10,27 @@
    <children>
       <Pane layoutX="14.0" layoutY="14.0" prefHeight="155.0" prefWidth="210.0" style="-fx-background-color: gray;">
          <children>
-            <Label fx:id="act" alignment="CENTER_RIGHT" layoutX="4.0" layoutY="118.0" prefHeight="37.0" prefWidth="202.0" text="10101010" textFill="WHITE">
+            <Label fx:id="actionView" alignment="CENTER_RIGHT" layoutX="4.0" layoutY="118.0" prefHeight="37.0" prefWidth="202.0" textFill="WHITE">
                <font>
                   <Font name="Arial" size="32.0" />
                </font>
             </Label>
-            <Label alignment="BOTTOM_RIGHT" contentDisplay="RIGHT" layoutX="7.0" layoutY="14.0" prefHeight="103.0" prefWidth="196.0" text="101 + 111101 + 1010101010 + 214234 + 11000101010" textFill="WHITE" wrapText="true">
+            <Label fx:id="historyView" alignment="BOTTOM_RIGHT" contentDisplay="RIGHT" layoutX="7.0" layoutY="14.0" prefHeight="103.0" prefWidth="196.0" textFill="WHITE" wrapText="true">
                <font>
                   <Font size="15.0" />
                </font>
             </Label>
          </children>
       </Pane>
-      <Button fx:id="num0" layoutX="14.0" layoutY="182.0" mnemonicParsing="false" prefHeight="126.0" prefWidth="68.0" text="0" />
-      <Button fx:id="num1" layoutX="86.0" layoutY="182.0" mnemonicParsing="false" prefHeight="126.0" prefWidth="68.0" text="1" />
-      <Button fx:id="plus" layoutX="164.0" layoutY="182.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="28.0" text="+" />
-      <Button fx:id="minus" layoutX="195.0" layoutY="182.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="28.0" text="-" />
-      <Button fx:id="divide" layoutX="164.0" layoutY="214.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="28.0" text="÷" />
-      <Button fx:id="multiply" layoutX="195.0" layoutY="214.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="28.0" text="×" />
+      <Button fx:id="num0" layoutX="14.0" layoutY="182.0" mnemonicParsing="false" onAction="#giveZero" prefHeight="126.0" prefWidth="68.0" text="0" />
+      <Button fx:id="num1" layoutX="86.0" layoutY="182.0" mnemonicParsing="false" onAction="#giveOne" prefHeight="126.0" prefWidth="68.0" text="1" />
+      <Button fx:id="plus" layoutX="164.0" layoutY="182.0" mnemonicParsing="false" onAction="#addition" prefHeight="29.0" prefWidth="28.0" text="+" />
+      <Button fx:id="minus" layoutX="195.0" layoutY="182.0" mnemonicParsing="false" onAction="#subtraction" prefHeight="29.0" prefWidth="28.0" text="-" />
+      <Button fx:id="divide" layoutX="164.0" layoutY="214.0" mnemonicParsing="false" onAction="#division" prefHeight="29.0" prefWidth="28.0" text="÷" />
+      <Button fx:id="multiply" layoutX="195.0" layoutY="214.0" mnemonicParsing="false" onAction="#multiplication" prefHeight="29.0" prefWidth="28.0" text="×" />
       <Button fx:id="sqrt" layoutX="164.0" layoutY="245.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="28.0" text="√" />
       <Button fx:id="squared" layoutX="195.0" layoutY="245.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="28.0" text="𝑥²" />
-      <Button fx:id="clear" layoutX="164.0" layoutY="277.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="28.0" text="C" textOverrun="CLIP" />
-      <Button fx:id="equals" layoutX="195.0" layoutY="277.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="28.0" text="=" />
+      <Button fx:id="clear" layoutX="164.0" layoutY="277.0" mnemonicParsing="false" onAction="#clear" prefHeight="29.0" prefWidth="28.0" text="C" textOverrun="CLIP" />
+      <Button fx:id="equals" disable="true" layoutX="195.0" layoutY="277.0" mnemonicParsing="false" onAction="#equals" prefHeight="29.0" prefWidth="28.0" text="=" />
    </children>
 </AnchorPane>
