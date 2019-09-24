@@ -14,7 +14,7 @@ Chris Wilson = R1, R2, R6
 
 Bryson Ward = R5
 
-Nick Bartling = R5
+Nick Bartling = R5, N4.1
 
 The requirements for this project are below:
 
@@ -31,12 +31,10 @@ The requirements for this project are below:
 
 The non-functional requirements for this project are below:
 
-    The system shall be implemented in IntelliJ Idea and JDK 12.
-    The system shall have a gitignore file to ignore the temporary files.
-        This file may be created automatically on https://www.gitignore.io/ (Links to an external site.)
-    One of the team members shall create a repository and add others as collaborators.
-    The repository shall have a readme.md file for explanations of the project.
-        This file shall have a screenshot of the project and a small manual on how to use it.
-    The task will be divided into the number of team members and each team member MUST commit to the project.
+    N1. The system shall be implemented in IntelliJ Idea and JDK 12.
+    N2. The system shall have a gitignore file to ignore the temporary files.
+    N3. One of the team members shall create a repository and add others as collaborators.
+    N4. The repository shall have a readme.md file for explanations of the project.
+        N4.1 This file shall have a screenshot of the project and a small manual on how to use it.
+    N5. The task will be divided into the number of team members and each team member MUST commit to the project.
         The task distribution shall be noted in the readme file of the repository in the format of [name of team member] = [task of the team member] in each line.
-        The instructor will analyze the commit history for each team member's contribution.
