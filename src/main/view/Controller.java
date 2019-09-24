@@ -31,10 +31,10 @@ public class Controller {
     private Button multiply;
 
     @FXML
-    private Button sqrt;
+    private Button square;
 
     @FXML
-    private Button square;
+    private Button sqrt;
 
     @FXML
     private Button equals;
