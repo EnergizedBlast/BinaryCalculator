@@ -1,4 +1,8 @@
 # Binary Calculator
+![Capture](Capture.png)
+
+Manual: 
+    This is a basic binary calculator.
 
 Collaborators: Bryson Ward, Chris Wilson, Corbin Creedon, Nick Bartling
 
